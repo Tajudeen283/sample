@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Myself</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--This is an external style-->
+	<link rel="stylesheet" type="text/css" href="css/myself.css">
+         <!--This is an internal style-->
+	<style type="text/css">
+		/*The styling starts here*/
+
+body{
+	background-color: rgb(110, 255, 288);
+	margin: 0;
+}
+header{
+	margin: 5px;
+	background-color: rgb(128, 128, 0);
+	font-size: 120%;
+}
+h1{
+	text-align: center;
+	font-style: italic;
+}
+
+/*Styling nav bar with drop down*/
+
+nav ul{
+	margin: 5px;
+	padding: 2px;
+	text-align: center;
+	background-color: rgb(128, 0, 128);
+}
+nav li{ 
+	text-align: center;
+    box-sizing: border-box; 
+    border-radius: 10px;
+    background-color: rgb(0, 120, 120);
+    text-decoration: none;
+    line-height: 50px;
+    width: 250px;
+    margin: 10px;
+    display: inline-block;
+}
+nav a{
+	text-decoration: none;
+	color: rgb(250, 0, 250);
+	display: block;
+}
+nav a:hover{
+	border-radius: 0;
+	background-color: rgb(110, 250, 250);
+}
+
+/* 1.The opacity: 0; hides the nav list(instead of display: none;
+ 2.height: 0; and overflow: hidden; do the work here)*/
+
+nav li ul{
+	position: absolute;
+	width: inherit;
+	height: 0;
+	overflow: hidden;
+}
+
+/* 1.The opacity: 1; shows hidden nav list when hover
+ 2.height: inherit; do the work here*/
+
+nav li:hover ul{
+	border-radius: 10px;
+	display: block;
+	background-color: rgb(128, 0, 128); 
+	height: inherit;
+}
+nav li ul:hover{
+	background-color: rgb(128, 0, 128);
+}
+
+/*Styling the sections*/
+
+.mine{ 
+	margin: 10px;
+	font-size: 120%;
+	font-family: fantasy;
+}
+section{
+	line-height:200%;
+	box-sizing: content-box;
+	background-color: rgb(0, 120, 120);
+	font-size: 120%;
+	margin: 5px;
+}
+ul{
+	list-style: square;
+}
+h2{
+	text-align: center;
+	font-style: oblique;
+	font-family: serif;
+}
+
+.left{
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+.right{
+	width: 100%;*/
+}
+.more, .fourth{
+	line-height: 200%;
+}
+
+/*Styling the footer*/
+
+footer{
+	line-height: 120%;
+	text-align: center;
+	font-size: 150%;
+	font-family: cursive;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+	   <h1> Tajudeen Luqman Adesakin</h1>
+		<p><marquee>Here on my page you can find and know more about me. Let us take ourselves through some exciting moments</marquee></p>
+	</header>
+<main>
+<nav>
+<ul>
+	<li><a href="none">Profiles</a></li>
+	<li><a href="none">Preferences</a></li>
+	<li><a href="none">Achievements</a>
+		<ul>
+			<li><a href="none">2021</a></li>
+			<li><a href="none">2020</a></li>
+			<li><a href="none">2019</a></li>
+			<li><a href="none">2018</a></li>
+			</ul></li>
+	<li><a href="none">Contacts</a></li>
+</ul>
+</nav>
+     <p class="mine">I hope you go through my profiles and other parts of my pages to know more about me</p>
+</main>
+
+<section class="left">
+	<p>Here, see the list of my favourite foods</p>
+	<h2>My Favourite Foods</h2>
+	<ul>
+		<li>Sweet Potatoess</li>
+		<li>Pizza</li>
+		<li>Kimchi Soup</li>
+		<li>Apple</li>
+
+</section>
+<section class="right">
+	<p>Go through some of my achievements on web development</p>
+	<h2>My Achievements</h2>
+	<ul>
+		<li>Progress in  HTML5 course (100%) <progress value="1" max="1"></progress></li>
+		<li>Progress in CSS3 course (100%) <progress value="1" max="1"></progress></li>
+		<li>Progress in JS(Javascript)course (10%) <progress value="0.1" max="1"></progress></li>
+		<li>Progress in web development specialization (42%) <progress value="0.42" max="1"></progress></li>
+	</p>
+</ul>
+	</section>
+	<section class="more">
+		<p class="clear">I believe after going though my pages you will want to know more 
+		about me and why I chose web development of all specializations</p>
+		<h2>More About Me</h2>
+		<details>
+			<summary>My Childhood & Passion</summary>
+			<p>I grew up in the south-western part of Nigeria, I found myself attached to computer science as a course and I make up my mind to become a web developer because I love to solve problems. I face many challenges though but thanks to my tutor "Dr. Mrs Collen van Lent" I manage to overcome them</p>
+		</details>
+	
+</section>
+<section class="fourth">
+	<p>This page is created by Al Ameen Luqman and supervised virtually by Collen van Lent. Follow me to learn about web development together with my tutor. To learn more about web design, visit <a href="https://intro-webdesign.com">Intro Web Design</a></p>
+</section>
+<footer>
+	<p>WebAmeen Copyright &copy; 2021|  All Right Reserved.</p>
+</footer>
+
+</body>
+</html>
